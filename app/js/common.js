@@ -19,8 +19,6 @@ $(function () {
 		}
 	});
 
-	reInitFancybox();
-
 	// $(".main-slider__cont").each((i, el) => {
 	// 	let $slider = $(el).find(".main-slider");
 
@@ -51,12 +49,14 @@ $(function () {
 	// });
 
 	var menu = $('.slider-nav__list').clone();
-	var phone = $('.head .tel').clone();
+	var phone = $('.head .head-phone').clone();
 	var soc = $('.footer .soc').clone();
 
 	$('.mobile-menu').append(menu);
 	$('.mobile-menu').append(phone);
 	$('.mobile-menu').append(soc);
+
+	reInitFancybox();
 
 	$('.burger').click(function () {
 		$(this).toggleClass('open');
@@ -130,7 +130,13 @@ $(function () {
 		speed: 1000,
 		autoplay: false,
 		autoplaySpeed: 1000,
-		appendArrows: $(".testemonials-arrow")
+		appendArrows: $(".testemonials-arrow"),
+		responsive: [{
+			breakpoint: 660,
+			settings: {
+				adaptiveHeight: true
+			}
+		}]
 
 	});
 });

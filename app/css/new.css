@@ -409,6 +409,10 @@ li {
   opacity: 0;
 }
 
+.main-slider__slide img {
+  height: auto !important;
+}
+
 .slider-full {
   margin: 0 -5px;
 }
@@ -655,16 +659,6 @@ li {
   }
   .main-slider__slide {
     position: relative;
-    padding: 54% 0 0;
-  }
-  .main-slider__slide img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: 82% center;
   }
   .head.js__scrolled {
     padding: 1.4rem;

@@ -150,7 +150,7 @@ $(window).on("load scroll touchmove", function () {
 
 	if ($(window).width() > 660) {
 
-		if ($(window).scrollTop() > 10) {
+		if ($(window).scrollTop() > 0) {
 			$('.head').addClass('js__scrolled');
 		} else {
 			$('.head').removeClass('js__scrolled');

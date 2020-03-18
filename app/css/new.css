@@ -425,14 +425,9 @@ li {
   height: auto;
 }
 
-.slider-full figure {
-  display: flex;
-  flex-direction: column;
-}
-
 .slider-full img {
-  object-position: initial;
-  width: initial;
+  width: auto;
+  height: auto;
 }
 
 .head.js__scrolled {
@@ -444,8 +439,13 @@ li {
   cursor: pointer;
 }
 
+.slider-nav__item {
+  display: flex;
+}
+
 .slider-nav__link {
   font-size: 1rem;
+  flex: 1 1 auto;
 }
 
 .about-gallery {

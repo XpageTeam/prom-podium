@@ -9,6 +9,7 @@ $output-bourbon-deprecation-warnings: false
 	margin: 0 -5px
 	&__item
 		margin: 0 5px
+
 .projects
 	&__title
 		padding: 45px 
@@ -17,15 +18,19 @@ $output-bourbon-deprecation-warnings: false
 	height: auto
 
 
-.slider-full 
-	figure
-		display: flex 
-		flex-direction: column
-
+.slider-full
 	img
-		//object-fit: initial
-		object-position: initial
-		width: initial
+		width: auto
+		height: auto
+
+	// figure
+	// 	display: flex 
+	// 	flex-direction: column
+
+	// img
+	// 	//object-fit: initial
+	// 	object-position: initial
+	// 	width: initial
 
 .head 
 	&.js__scrolled
@@ -36,8 +41,13 @@ $output-bourbon-deprecation-warnings: false
 .nav__link
 	cursor: pointer
 
-.slider-nav__link
-	font-size: rem(16)	
+.slider-nav
+	&__item
+		display: flex
+
+	&__link
+		font-size: rem(16)
+		flex: 1 1 auto	
 	
 
 .about-gallery

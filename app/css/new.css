@@ -539,6 +539,10 @@ li {
   pointer-events: all;
 }
 
+.slider-nav__link {
+  padding: 22px 25px;
+}
+
 @media screen and (max-width: 1600px) {
   .advantages-title,
   .about-title,
@@ -621,6 +625,9 @@ li {
   }
   .head__mail {
     margin: 0 20px 0 auto;
+  }
+  .slider-nav__link {
+    padding: 18px 15px;
   }
 }
 

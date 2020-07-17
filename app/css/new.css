@@ -409,6 +409,10 @@ li {
   opacity: 0;
 }
 
+.main-slider__nav .wrapper {
+  max-width: 100%;
+}
+
 .main-slider__slide img {
   height: auto !important;
 }

@@ -158,6 +158,18 @@ $(window).on("load scroll touchmove", function () {
 	}
 });
 
+
+//scroll-banner
+
+$(document).ready(function(){
+    $("#scroll").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 900);
+    });
+});
+
 var reInitFancybox = function reInitFancybox(_) {
 	$("a.fancybox:not(.slider-full__item)").fancybox({
 		buttons: ['thumbs', 'close'],

@@ -110,12 +110,12 @@ gulp.task("prefixer", () =>
 
 gulp.task('imagemin', () =>  
 	gulp.src('app/img/**/*', {since: gulp.lastRun("imagemin")})
-		.pipe($.cache($.imagemin({
-			interlaced: true,
-			progressive: true,
-			svgoPlugins: [{removeViewBox: false}],
-			use: [pngquant()]
-		})))
+		// .pipe($.cache($.imagemin({
+		// 	interlaced: true,
+		// 	progressive: true,
+		// 	svgoPlugins: [{removeViewBox: false}],
+		// 	use: [pngquant()]
+		// })))
 		.pipe(gulp.dest('app/img'))
 );
 
